@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 class NotificationDetailScreen extends StatelessWidget {
@@ -10,8 +8,15 @@ class NotificationDetailScreen extends StatelessWidget {
     final data = ModalRoute.of(context)!.settings.arguments;
 
     return Scaffold(
-      appBar: AppBar(title: Text("Another Page")),
-      body: Center(child: Text(data.toString())),
+      appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.white),
+        title: const Text(
+          "Notification Detail",
+          style: TextStyle(color: Colors.white),
+        ),
+        backgroundColor: Colors.black54,
+      ),
+      body: Container(color: Colors.white70, child: Center(child: Text(data.toString()))),
     );
   }
 }
