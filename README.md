@@ -2,6 +2,10 @@
 
 A new Flutter project for the local notification.
 
+User can schedule the notification as well. 
+
+Notification details screen will open when user tap on the notification received on phone. 
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
